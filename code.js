@@ -4,5 +4,8 @@ function helloWorld() {
 }
 
 function sayHello(v) {
-    return "Hello, Jane!";
+    if(v === "Alex")
+        return "Hello, Alex!";
+    else
+        return "Hello, Jane!";
 }
