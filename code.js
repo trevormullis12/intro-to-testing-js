@@ -9,3 +9,7 @@ function sayHello(v) {
     else
         return "Hello, " + v + "!";
 }
+
+function isFive(v) {
+    return v == 5;
+}
