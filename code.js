@@ -13,3 +13,9 @@ function sayHello(v) {
 function isFive(v) {
     return v == 5;
 }
+
+function isEven(v) {
+    if(v % 2 === 0)
+    return true;
+    else return false;
+}
