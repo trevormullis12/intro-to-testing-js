@@ -4,5 +4,8 @@ function helloWorld() {
 }
 
 function sayHello(v) {
-    return "Hello, " + v + "!";
+    if(typeof v !== "string" || !isNaN(parseFloat(v)) || v === "")
+        return "Hello, World!";
+    else
+        return "Hello, " + v + "!";
 }
