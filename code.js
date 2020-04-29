@@ -28,3 +28,13 @@ function isVowel(v) {
     }
     return false;
 }
+
+function add(num1, num2) {
+    if(isNaN(parseInt(num1)) || isNaN(parseInt(num2)))
+        return NaN;
+    else
+        var one = parseInt(num1);
+        var two = parseInt(num2);
+
+        return (one + two);
+}

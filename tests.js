@@ -156,3 +156,42 @@ describe('isVowel', function() {
         expect(isVowel()).toBe(false);
     });
 });
+
+// Unit tests for add function
+describe('add', function() {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe("function");
+    });
+    // returns a boolean no matter the input
+    it('should return a number when called', function () {
+        expect(typeof add()).toBe("number");
+    });
+    // add(2, 3) returns 5
+    it('should return 5 when executed with add(2, 3)', function () {
+        expect(typeof add(2, 3)).toBe("number");
+    });
+    // add(-3, -9) returns -12
+    it('should return -12 when executed with add(-3, -9)', function () {
+        expect(typeof add(-3, -9)).toBe("number");
+    });
+    // add("5", 6) returns 11
+    it('should return 11 when executed with add("5", 6)', function () {
+        expect(typeof add("5", 6)).toBe("number");
+    });
+    // add("-4", "10") returns 6
+    it('should return 6 when executed with add(-4, "10")', function () {
+        expect(typeof add(-4, "10")).toBe("number");
+    });
+    // add("banana", "split") returns NaN
+    it('should return NaN when executed with add("banana", "split")', function () {
+        expect(typeof add("banana", "split")).toBe("number");
+    });
+    // add(2, "apples") returns NaN
+    it('should return NaN when executed with add(2, "apples")', function () {
+        expect(typeof add(2, "apples")).toBe("number");
+    });
+    // add() returns NaN
+    it('should return NaN when executed with add()', function () {
+        expect(typeof add()).toBe("number");
+    });
+});
