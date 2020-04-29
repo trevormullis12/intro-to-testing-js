@@ -19,3 +19,12 @@ function isEven(v) {
     return true;
     else return false;
 }
+
+function isVowel(v) {
+    var vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    if(typeof v == "string") {
+        if (v.length == 1 && vowels.indexOf(v) != -1)
+            return true;
+    }
+    return false;
+}
